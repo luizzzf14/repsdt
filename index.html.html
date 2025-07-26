@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Para Nanara 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8c8dc, #ffd1dc, #eec9f0, #fce4ec);
+      color: #880e4f;
+      text-align: center;
+      font-family: cursive;
+      padding: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* removida a imagem de fundo */
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    button {
+      margin: 15px;
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #f48fb1;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    #mensagem, #respostaQuiz {
+      font-size: 24px;
+      margin-top: 25px;
+    }
+
+    .presente {
+      margin-top: 50px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #ec407a;
+      color: white;
+      border-radius: 15px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: #d81b60;
+    }
+
+    hr {
+      margin: 40px 0;
+      border: 1px solid #f8bbd0;
+    }
+
+    .hidden-ln {
+      position: absolute;
+      font-size: 12px;
+      color: rgba(255, 192, 203, 0.2);
+    }
+
+    .ln-top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .ln-bottom-right {
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Oi Nanara 💕</h1>
+  <p>Tenho algo pra te dizer...</p>
+  <button onclick="mostrarMensagem()">Clique aqui</button>
+  <div id="mensagem"></div>
+
+  <hr>
+
+  <h2>O quanto você me ama? 💘</h2>
+  <button onclick="responderQuiz('pouco')">Pouquinho</button>
+  <button onclick="responderQuiz('muito')">Muito</button>
+  <button onclick="responderQuiz('infinitamente')">Infinitamente</button>
+  <div id="respostaQuiz"></div>
+
+  <hr>
+
+  <div class="presente">
+    <h2>Você ganhou um presente 🎁</h2>
+    <p>Seu maior presente não é gloss de Francisca e sim esse 👇</p>
+    <a href="https://wa.me/5584994779057" target="_blank">Veja seu maior presente 💬</a>
+  </div>
+
+  <div class="hidden-ln ln-top-left">L & N ❤️</div>
+  <div class="hidden-ln ln-bottom-right">L & N ❤️</div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerText = "Por mais que você não tome banho, eu te amo...";
+    }
+
+    function responderQuiz(resposta) {
+      let mensagem = "";
+      if (resposta === 'pouco') {
+        mensagem = "Mentira 😢 você me ama mais!";
+      } else if (resposta === 'muito') {
+        mensagem = "Só isso, Nanara Priscila?";
+      } else {
+        mensagem = "Muito bem, agora quero morder sua bunda";
+      }
+      document.getElementById("respostaQuiz").innerText = mensagem;
+    }
+  </script>
+
+</body>
+</html>
